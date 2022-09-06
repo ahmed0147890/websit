@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    width: 100%;
+    padding: 10px 200px;
+
+}
+
+.logo {
+    color: #3a6cf4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
+
+}
+
+.navigation a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 20px;
+    color: #3a6cf4;
+
+}
+
+.navigation a:hover {
+    color: red;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    background: url(bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.main h1 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.main h1 span {
+    display: inline-block;
+    color: red;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-top: 30px;
+    letter-spacing: 1px;
+
+}
+
+.main h3 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.main-bt {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 400;
+    background-color: #601cfc;
+    padding: 20px 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+
+}
+
+.main-bt:hover {
+    color: red;
+    background-color: #3a6cf4;
+    transform: scale(1.1);
+}
+
+.icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 10px;
+}
+
+.cards {
+    background: url(0.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tittle {
+    display: flex;
+    justify-content: center;
+    font-size: 2.3em;
+    font-weight: 800;
+    color: #3a6cf4;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    width: 20.25em;
+    box-shadow: 0 5px 20px rgba(1, 1, 1, 15%);
+    border-radius: 30px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+
+}
+
+.card .icon {
+    color: #3a6cf4;
+    text-align: center;
+    font-size: 8em;
+}
+
+.info {
+    text-align: center;
+
+}
+
+.info h3 {
+    font-size: 1.4em;
+    color: #3a6cf4;
+    opacity: 0;
+
+}
+
+.info p {
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.card:hover .info h3 {
+    opacity: 1;
+}
+
+.card:hover {
+    background: #fce21c;
+    transform: scale(1.1);
+}
+
+.courses {
+    background: black;
+}
+
+.courses .content {
+    margin-top: 30px;
+}
+
+.course-card {
+    overflow: hidden;
+    border: 1px solid white;
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+    min-height: 12em;
+    width: 23em;
+    transition: 0.5s ease;
+
+}
+
+.course-card:hover {
+    transform: scale(1.1);
+}
+
+.course-image {
+    width: 100%;
+}
+
+.course-info {
+    padding: 25px;
+}
+
+.category {
+    font-size: 1.2em;
+    color: black;
+}
+
+.course-title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.course-title span {
+    color: red;
+}
+
+.course-title .details {
+    color: #3a6cf4;
+    text-decoration: none;
+}
+
+.course-title .details:hover {
+    color: #601cfc;
+}
+
+.footer {
+    background: black;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    color: #fff;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+
+    }
+}
